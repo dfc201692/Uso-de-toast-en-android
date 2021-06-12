@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:background="@color/teal_200"
+        android:text="Prueba de la clase Toast"
+        android:textSize="20dp"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/button1"
+        android:background="@drawable/bordes_redondos2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="105dp"
+        app:backgroundTint="#9978D5"
+        android:onClick="prueba1"
+        android:textColor="@color/black"
+        android:text="Toast básico" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="209dp"
+        app:backgroundTint="#4CAF50"
+        android:background="@drawable/bordes_redondos2"
+        android:onClick="prueba2"
+        android:text="Toast en otra ubicación" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="302dp"
+        app:backgroundTint="#03A9F4"
+        android:background="@drawable/bordes_redondos2"
+        android:onClick="prueba3"
+        android:textColor="@color/black"
+        android:text="Toast customizado" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="402dp"
+        app:backgroundTint="#FF9800"
+        android:background="@drawable/bordes_redondos2"
+        android:onClick="prueba4"
+        android:text="Toast customizado advertencia" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:onClick="prueba5"
+        android:layout_width="184dp"
+        android:layout_height="136dp"
+        android:layout_below="@+id/button4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="119dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="86dp"
+        app:srcCompat="@drawable/bombillo" />
+
+</RelativeLayout>
